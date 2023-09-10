@@ -10,7 +10,7 @@ const storeSlice = createSlice({
     currentCategory: "",
   },
   reducers: {
-    updateProduct: (state, { payload }) => {
+    updateProducts: (state, { payload }) => {
       state.products = [...payload.products];
     },
     addToCart: (state, { payload }) => {
@@ -53,7 +53,7 @@ const storeSlice = createSlice({
 });
 
 export const {
-  updateProduct,
+  updateProducts,
   addToCart,
   addMultipleToCart,
   updateCartQuantity,
@@ -65,5 +65,7 @@ export const {
 } = storeSlice.actions;
 
 export const store = configureStore({
-  reducer: storeSlice.reducer,
+  reducer: {
+    store: storeSlice.reducer,
+  },
 });
