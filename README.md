@@ -18,7 +18,7 @@ This is a code refactor project. The frontend app was built with react Context A
 
 ## Link
 
-Page published at https://safe-refuge-55999-8c25ae1dbecb.herokuapp.com/
+Page published at https://gentle-tundra-50609-b11c582ff998.herokuapp.com/
 
 ## Screenshot
 
